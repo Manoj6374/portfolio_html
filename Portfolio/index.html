@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.CSS"/>
+
+  </head>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+
+    <nav>
+      <div class="nav-logo">
+        <a href="#">
+          <img src="logo_trial.png" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link link1"><a href="#">Skills</a></li>
+        <li class="link link2"><a href="#">Projects</a></li>
+        <li class="link link3"><a href="#">Contact</a></li>
+      </ul>
+      <button class="btn hire">Hire Me</button>
+    
+      <div class="burger-menu" onclick="toggleSideNav()" id="open">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </nav>
+    
+    <div id="side-nav" class="open"> 
+      <ul class="sidenav-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link link4"><a href="#">Skills</a></li>
+        <li class="link link5"><a href="#">Projects</a></li>
+        <li class="link link6"><a href="#">Contact</a></li>
+      </ul>
+      <div><span id="cancel" onclick="toggleSideNav()">X</span></div>
+    </div>
+
+
+    <div class="container">
+      <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h4>CREATE YOUR SITE LIKE A PRO</h4>
+        <h1>Hi, I'm <span>Manoj </span></h1>
+        <h1 class="webdev">Web developer</h1>
+        <p>
+          Welcome to my portfolio! Inside, you'll discover a handpicked showcase of projects that embody my love for elegant design, smooth user experience, and cutting-edge tech. From corporate sites to interactive apps and dazzling e-commerce platforms, I've got it all covered.
+        </p>
+        <button class="btn get" >Get started <i class="fa-brands fa-telegram"></i></button>
+        <button class="btn" onclick="download()">Download Resume <i class="fa-solid fa-download"></i></button>
+      </div>
+      <div class="image">
+        <img src="IMG_1191.JPG" alt="" />
+      </div>
+    </div>
+
+    <div class="skill-container">
+      <h1 class="header">My Skills</h1>
+       <div class="skills">
+       <h2>Front end</h2>
+       <ul>
+        <li><img src="assets/html.png" alt="">HTML 5 </li>
+        <li><img src="assets/css.png" alt="">CSS 3 </li>
+        <li><img src="assets/js.png" alt="">Java Script</li>
+        <li><img src="assets/react.png" alt="">React js</li>
+        <li><img src="assets/vite-react.png" alt="">React js</li>
+         </ul>
+         <h2>Backend</h2>
+         <ul>
+          <li><img src="assets/node.png" alt="">Node js</li>
+          <li><img src="assets/python.png" alt="">Python</li>
+           </ul>
+         <h2>Database</h2>
+          <ul>
+            <li><img src="assets/mongodb.png" alt="">Mongo DB</li>
+            <li><img src="assets/sql.png" alt="">SQL</li>
+             </ul>
+        <h2>Tools</h2>
+         <ul>
+          <li><img src="assets/git.png" alt="">Git & Git hub</li>
+          <li><img src="assets/github.png" alt=""> Git hub</li>
+          <li><img src="assets/vscode.png" alt=""> Git hub</li>
+         </ul>
+     </div></div>
+     <div class="container-pro">
+      <h2 class="header"> MY PROJECTS</h2>
+      <div class="features">
+        <!--  <div class="card">
+          <span>
+            <i class="fa-solid fa-check-to-slot"></i>
+          </span>
+          <h4>Online Voting System</h4>
+          <p>
+            An online voting system web application designed to facilitate
+            secure and accessible voting processes for elections, surveys, and
+            organizational decision-making.
+          </p>
+          <a href="#" aria-label="View Online Voting System">
+            View <i class="fa-solid fa-eye-slash"></i>
+          </a>
+        </div> -->
+        <div class="card">
+          <span>
+          <FontAwesomeIcon icon={faCartShopping} />          
+          </span>
+          <h4>E-Commerce</h4>
+        <img src="assets/WhatsApp Image 2024-05-27 at 7.36.01 PM.jpeg" alt="" />
+          <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      </ul>
+          
+          <a
+            href="https://mmart-60028269846.development.catalystserverless.in/app/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View E-Commerce Website"
+          >
+            View <i class="fa-solid fa-eye"></i>
+          </a>
+        </div>
+        <div class="card">
+          <span>
+          <FontAwesomeIcon icon={faBaseballBatBall} />
+          </span>
+          <h4>RCB Fan Page</h4>
+          <img src="assets/IMG_20240531_184954.jpg" alt="" />
+          <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      </ul>
+      
+          <a href="https://rcbfanpage.netlify.app/" aria-label="View Online Voting System">
+            View <i class="fa-solid fa-eye-slash"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="contact-container">     
+       <h2 class="header">CONTACT</h2>
+       <div>
+        <form id="contact-form"  action="https://formspree.io/f/xyyrqopk"  method="POST">
+          <label >
+            Name:
+            <input type="text" name="Name">
+          </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+        <footer>
+          <div class="icon">
+
+            <p ><a class="linkedin"  href="https://www.linkedin.com/in/manojn24" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+            <p ><a class="instagram" href="https://www.instagram.com/m_r_m_a_n_o_j_24?igsh=MW12aXAzMjgxaTVjNA==" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+            <p ><a class="facebook"  href="#"><i class="fa-brands fa-facebook"></i> </a></p>
+            <p ><a class="twitter"   href="#"><i class="fa-brands fa-twitter"></i>  </a></p>
+            <p ><a class="whatsapp"  href="+91 6374003745"><i class="fa-brands fa-whatsapp"></i> </a></p>
+        </footer>
+       </div>
+    </section>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+    <script src="sctipt.js"></script>
+  </body>
+</html>
